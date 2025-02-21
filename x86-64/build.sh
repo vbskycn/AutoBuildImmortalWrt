@@ -41,6 +41,15 @@ PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
+# 自定义增加
+PACKAGES="$PACKAGES luci-app-frpc"                             # 添加frpc管理界面
+PACKAGES="$PACKAGES luci-app-openclash"                          # 添加openclash管理界面
+PACKAGES="$PACKAGES adguardhome"                                 # 添加AdGuardHome软件
+PACKAGES="$PACKAGES luci-app-ipsec-vpnd"                         # 添加IPsec VPN客户端界面
+PACKAGES="$PACKAGES luci-app-ipsec-vpnserver-manyusers"          # 添加支持多用户的IPsec VPN服务端
+PACKAGES="$PACKAGES mosdns"                                      # 添加mosdns服务
+PACKAGES="$PACKAGES luci-app-passwall"                           # 添加passwall管理界面
+
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
